@@ -497,6 +497,78 @@ ol {
 .step-card p {
     color: var(--color-text-secondary);
 }
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-2xl);
+}
+
+.team-card {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-image {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto var(--spacing-md);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid transparent;
+    background: var(--gradient-primary);
+    padding: 4px;
+    transition: all var(--transition-base);
+}
+
+.team-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: var(--color-bg-secondary);
+    z-index: 1;
+}
+
+.team-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform var(--transition-smooth);
+}
+
+.team-card:hover .team-image {
+    box-shadow: 0 0 32px hsla(280, 85%, 60%, 0.4);
+    transform: translateY(-8px);
+}
+
+.team-card:hover .team-image img {
+    transform: scale(1.1);
+}
+
+.team-info h3 {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text-primary);
+}
+
+.team-role {
+    font-size: var(--font-size-base);
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+.team-description {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+}
 
 /* ========================================
    MODAL
