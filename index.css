@@ -267,8 +267,22 @@ ol {
 }
 
 .logo-image {
-    height: 50px;
+    height: 90px;
     width: auto;
+    max-width: 280px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .logo-image {
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-image {
+        height: 55px;
+    }
 }
 
 .nav-links {
@@ -877,4 +891,77 @@ ol {
   #location {
     padding: 1rem;
   }
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, hsl(142, 70%, 45%), hsl(142, 70%, 35%));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px hsla(142, 70%, 45%, 0.4);
+    z-index: 9999;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 30px;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px hsla(142, 70%, 45%, 0.5);
+}
+
+.floating-whatsapp .material-icons {
+    font-size: 32px;
+}
+
+/* Contact Info Styles */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    color: var(--color-text-secondary);
+}
+
+.contact-item .material-icons {
+    font-size: 20px;
+    color: var(--color-primary);
+}
+
+.contact-item a {
+    color: var(--color-text-secondary);
+    transition: color var(--transition-fast);
+}
+
+.contact-item a:hover {
+    color: var(--color-primary);
+}
+
+.location-section {
+    flex: 1.5;
+}
+
+.location-section p {
+    margin-bottom: 15px;
+    color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+    .floating-whatsapp {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .floating-whatsapp .material-icons {
+        font-size: 26px;
+    }
 }
