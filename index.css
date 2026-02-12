@@ -319,9 +319,22 @@ ol {
     position: relative;
     overflow: hidden;
     padding-top: var(--header-height);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+}
+
+.hero-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .hero-overlay {
@@ -434,8 +447,10 @@ ol {
 .service-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     transition: transform var(--transition-smooth);
+    background-color: var(--color-bg-secondary);
 }
 
 .service-card:hover .service-image img {
