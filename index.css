@@ -119,6 +119,12 @@ img {
     display: block;
 }
 
+/* Material Icons */
+.material-icons {
+    font-size: inherit;
+    vertical-align: middle;
+}
+
 button {
     font-family: inherit;
     cursor: pointer;

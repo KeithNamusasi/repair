@@ -44,6 +44,7 @@ phone repair near me
 
     <title>Sangalo Repair | Professional Phone Repair & Tech Accessories</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -75,14 +76,14 @@ phone repair near me
                         affordable.</p>
                     <div class="hero-buttons">
                         <button class="btn btn-primary" id="orderBtnHero">
-                            <span>📱</span>
+                            <span class="material-icons">smartphone</span>
                             Order Service
                         </button>
                         <a href="#services" class="btn btn-secondary">View Services</a>
                     </div>
                 </div>
                 <div class="hero-image fade-in">
-                    <img src="hero-image.png" alt="Professional phone repair service">
+                    <img src="repair1.jpg" alt="Professional phone repair service">
                 </div>
             </div>
         </div>
@@ -99,7 +100,7 @@ phone repair near me
                 <!-- Repair Service -->
                 <div class="service-card glass-card fade-in">
                     <div class="service-image">
-                        <img src="repair-service.png" alt="Device repair services">
+                        <img src="repair.jpg" alt="Device repair services">
                     </div>
                     <div class="service-content">
                         <h3>Device Repair</h3>
@@ -119,7 +120,7 @@ phone repair near me
                 <!-- Accessories -->
                 <div class="service-card glass-card fade-in">
                     <div class="service-image">
-                        <img src="accessories.png" alt="Premium tech accessories">
+                        <img src="accessories.jpg" alt="Premium tech accessories">
                     </div>
                     <div class="service-content">
                         <h3>Premium Accessories</h3>
@@ -134,6 +135,33 @@ phone repair near me
                         </div>
                         <button class="btn btn-primary" data-service="accessories">Order Accessories</button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Services Section -->
+    <section class="section" id="software">
+        <div class="container">
+            <h2 class="section-title">Software Solutions</h2>
+            <p class="section-subtitle">Professional software services to keep your devices running smoothly</p>
+
+            <div class="service-card glass-card fade-in" style="max-width: 800px; margin: 0 auto;">
+                <div class="service-image">
+                    <img src="software.jpg" alt="Software services and solutions">
+                </div>
+                <div class="service-content">
+                    <h3>Software Services</h3>
+                    <p>Expert software solutions for all your devices</p>
+                    <div class="service-features">
+                        <div class="feature-item">Operating system installation & updates</div>
+                        <div class="feature-item">Virus & malware removal</div>
+                        <div class="feature-item">Data recovery & backup</div>
+                        <div class="feature-item">Software troubleshooting</div>
+                        <div class="feature-item">App installation & configuration</div>
+                        <div class="feature-item">Performance optimization</div>
+                    </div>
+                    <button class="btn btn-primary" data-service="software">Order Software Service</button>
                 </div>
             </div>
         </div>
@@ -220,7 +248,7 @@ phone repair near me
             <p class="section-subtitle">Have questions? Ready to order? Contact us on WhatsApp for instant support!</p>
             <div style="text-align: center; margin-top: var(--spacing-xl);">
                 <a href="https://wa.me/254794216336" class="btn btn-whatsapp" target="_blank" rel="noopener">
-                    <span>💬</span>
+                    <span class="material-icons">chat</span>
                     Chat on WhatsApp
                 </a>
             </div>
@@ -245,15 +273,15 @@ phone repair near me
 
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <p>📱 WhatsApp: +254 794 216336</p>
-                    <p>📍 Location: opposite sangalo junior
+                    <p><span class="material-icons" style="vertical-align: middle;">whatsapp</span> WhatsApp: +254 794 216336</p>
+                    <p><span class="material-icons" style="vertical-align: middle;">location_on</span> Location: opposite sangalo junior
                         <section id="map">
                             <h2>Our Location</h2>
                             
                             </section>
 
                     </p>
-                    <p>⏰ Hours: Mon-Sat, 9AM-7PM</p>
+                    <p><span class="material-icons" style="vertical-align: middle;">schedule</span> Hours: Mon-Sat, 9AM-7PM</p>
                 </div>
                             
                     
@@ -311,6 +339,7 @@ phone repair near me
                         <option value="Charger">Charger/Cable</option>
                         <option value="Earbuds">Earbuds/Headphones</option>
                         <option value="Power Bank">Power Bank</option>
+                        <option value="Software Service">Software Service</option>
                         <option value="Other">Other</option>
                     </select>
                 </div>
@@ -328,7 +357,7 @@ phone repair near me
                 </div>
 
                 <button type="submit" class="btn btn-whatsapp" style="width: 100%;">
-                    <span>💬</span>
+                    <span class="material-icons">send</span>
                     Send Order via WhatsApp
                 </button>
             </form>

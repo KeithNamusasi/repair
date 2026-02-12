@@ -49,7 +49,8 @@ function openModal(serviceType = '') {
         const serviceSelect = document.getElementById('serviceType');
         const serviceMap = {
             'repair': 'Screen Repair',
-            'accessories': 'Phone Case'
+            'accessories': 'Phone Case',
+            'software': 'Software Service'
         };
 
         if (serviceMap[serviceType]) {
