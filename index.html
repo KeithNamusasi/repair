@@ -116,3 +116,332 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo"><img src="logo.png" alt="Masaba Mobile Repair" class="logo-image"></a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><button class="btn btn-primary" id="orderBtnNav">Order Now</button></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('repair1.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <h1>
+                        Your Device, <span class="gradient-text">Perfectly Restored</span>
+                    </h1>
+                    <p>Expert repair services and premium accessories for all your tech needs. Fast, reliable, and
+                        affordable.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="orderBtnHero">
+                            <span class="material-icons">smartphone</span>
+                            Order Service
+                        </button>
+                        <a href="#services" class="btn btn-secondary">View Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Professional repair and quality accessories to keep your devices running at
+                their best</p>
+
+            <div class="services-grid">
+                <!-- Repair Service -->
+                <div class="service-card glass-card fade-in">
+                    <div class="service-image">
+                        <img src="repair.jpg" alt="Device repair services">
+                    </div>
+                    <div class="service-content">
+                        <h3>Device Repair</h3>
+                        <p>Expert technicians providing fast and reliable repairs for all your devices</p>
+                        <div class="service-features">
+                            <div class="feature-item">Screen replacement & repair</div>
+                            <div class="feature-item">Battery replacement</div>
+                            <div class="feature-item">Water damage recovery</div>
+                            <div class="feature-item">Camera & speaker fixes</div>
+                            <div class="feature-item">Software troubleshooting</div>
+                            <div class="feature-item">Same-day service available</div>
+                        </div>
+                        <button class="btn btn-primary" data-service="repair">Order Repair</button>
+                    </div>
+                </div>
+
+                <!-- Accessories -->
+                <div class="service-card glass-card fade-in">
+                    <div class="service-image">
+                        <img src="accessories.jpg" alt="Premium tech accessories">
+                    </div>
+                    <div class="service-content">
+                        <h3>Premium Accessories</h3>
+                        <p>High-quality accessories to protect and enhance your devices</p>
+                        <div class="service-features">
+                            <div class="feature-item">Premium phone cases</div>
+                            <div class="feature-item">Tempered glass protectors</div>
+                            <div class="feature-item">Wireless chargers</div>
+                            <div class="feature-item">Earbuds & headphones</div>
+                            <div class="feature-item">Cables & adapters</div>
+                            <div class="feature-item">Power banks</div>
+                        </div>
+                        <button class="btn btn-primary" data-service="accessories">Order Accessories</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Services Section -->
+    <section class="section" id="software">
+        <div class="container">
+            <h2 class="section-title">Software Solutions</h2>
+            <p class="section-subtitle">Professional software services to keep your devices running smoothly</p>
+
+            <div class="service-card glass-card fade-in" style="max-width: 800px; margin: 0 auto;">
+                <div class="service-image">
+                    <img src="software.jpg" alt="Software services and solutions">
+                </div>
+                <div class="service-content">
+                    <h3>Software Services</h3>
+                    <p>Expert software solutions for all your devices</p>
+                    <div class="service-features">
+                        <div class="feature-item">Operating system installation & updates</div>
+                        <div class="feature-item">Virus & malware removal</div>
+                        <div class="feature-item">Data recovery & backup</div>
+                        <div class="feature-item">Software troubleshooting</div>
+                        <div class="feature-item">App installation & configuration</div>
+                        <div class="feature-item">Performance optimization</div>
+                    </div>
+                    <button class="btn btn-primary" data-service="software">Order Software Service</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Get your device repaired or order accessories in just a few simple steps</p>
+
+            <div class="steps-grid">
+                <div class="step-card glass-card fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Choose Service</h3>
+                    <p>Select the repair or accessory you need from our comprehensive service list</p>
+                </div>
+
+                <div class="step-card glass-card fade-in">
+                    <div class="step-number">2</div>
+                    <h3>Send Details</h3>
+                    <p>Fill out the quick order form and we'll contact you via WhatsApp instantly</p>
+                </div>
+
+                <div class="step-card glass-card fade-in">
+                    <div class="step-number">3</div>
+                    <h3>Get Service</h3>
+                    <p>Bring in your device or pick up your accessories. Fast, easy, done!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="team">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <p class="section-subtitle">Expert technicians dedicated to providing exceptional service</p>
+
+            <div class="team-grid">
+                <!-- Clemson -->
+                <div class="team-card glass-card fade-in">
+                    <div class="team-image">
+                        <img src="clemson.jpg" alt="Clemson - Team Member">
+                    </div>
+                    <div class="team-info">
+                        <h3>Clemson</h3>
+                        <p class="team-role">Lead Technician</p>
+                        <p class="team-description">Expert in device repairs and customer service</p>
+                    </div>
+                </div>
+
+                <!-- Keith -->
+                <div class="team-card glass-card fade-in">
+                    <div class="team-image">
+                        <img src="keith.jpg" alt="Keith - Team Member">
+                    </div>
+                    <div class="team-info">
+                        <h3>Keith</h3>
+                        <p class="team-role">Senior Technician</p>
+                        <p class="team-description">Specialized in hardware diagnostics and repairs</p>
+                    </div>
+                </div>
+
+                <!-- Sostine -->
+                <div class="team-card glass-card fade-in">
+                    <div class="team-image">
+                        <img src="sostine.jpg" alt="Sostine - Team Member">
+                    </div>
+                    <div class="team-info">
+                        <h3>Sostine</h3>
+                        <p class="team-role">Technical Specialist</p>
+                        <p class="team-description">Expert in software solutions and accessory installation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have questions? Ready to order? Contact us on WhatsApp for instant support!</p>
+            <div style="text-align: center; margin-top: var(--spacing-xl);">
+                <a href="https://wa.me/254794216336" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                    <span class="material-icons">chat</span>
+                    Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Masaba Mobile Repair</h3>
+                    <p>Your trusted partner for professional device repairs and premium tech accessories.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="#services">Device Repair</a>
+                    <a href="#services">Accessories</a>
+                    <a href="#how-it-works">How It Works</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <span class="material-icons">chat</span>
+                        <a href="https://wa.me/254794216336" target="_blank">WhatsApp: +254 794 216336</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="material-icons">location_on</span>
+                        <span>Opposite Sangalo Junior</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="material-icons">schedule</span>
+                        <span>Mon-Sat, 9AM-7PM</span>
+                    </div>
+                </div>
+
+                <div class="footer-section location-section">
+                    <h3>Our Location</h3>
+                    <p>Masaba Mobile Repair – Sangalo, Bungoma</p>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d220.78157210762754!2d34.59464424446496!3d0.5217758101675434!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2ske!4v1770928275325!5m2!1sen!2ske"
+                            width="600"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <p>Visit our repair shop in Sangalo, Bungoma for fast and reliable services.</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Masaba Mobile Repair. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Modal -->
+    <div class="modal-overlay" id="orderModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+            <h2>Place Your Order</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="customerName">Your Name *</label>
+                    <input type="text" id="customerName" name="customerName" required placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number *</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="+123 456 7890">
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceType">Service Type *</label>
+                    <select id="serviceType" name="serviceType" required>
+                        <option value="">Select a service</option>
+                        <option value="Screen Repair">Screen Repair</option>
+                        <option value="Battery Replacement">Battery Replacement</option>
+                        <option value="Water Damage">Water Damage Recovery</option>
+                        <option value="Camera Repair">Camera Repair</option>
+                        <option value="Software Issue">Software Issue</option>
+                        <option value="Phone Case">Phone Case</option>
+                        <option value="Screen Protector">Screen Protector</option>
+                        <option value="Charger">Charger/Cable</option>
+                        <option value="Earbuds">Earbuds/Headphones</option>
+                        <option value="Power Bank">Power Bank</option>
+                        <option value="Software Service">Software Service</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="deviceModel">Device Model</label>
+                    <input type="text" id="deviceModel" name="deviceModel"
+                        placeholder="e.g., iPhone 13, Samsung Galaxy S21">
+                </div>
+
+                <div class="form-group">
+                    <label for="additionalInfo">Additional Information</label>
+                    <textarea id="additionalInfo" name="additionalInfo"
+                        placeholder="Tell us more about your request..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-whatsapp" style="width: 100%;">
+                    <span class="material-icons">send</span>
+                    Send Order via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254794216336" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <span class="material-icons">chat</span>
+    </a>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
